@@ -6,9 +6,12 @@
  * Return: Always 0 (Success)
  */
 
-int main()
+int main(void)
 	{
-	char Phrase[]= "\"Programming is like building a multilingual puzzle";
+	char Phrase[] = "\"Programming is like building a multilingual puzzle";
+
 	puts(Phrase);
-	return 0;
+
+	return (0);
+
 	}
