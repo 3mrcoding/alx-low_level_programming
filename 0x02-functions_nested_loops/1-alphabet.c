@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * print_alphabet - alphabit printer
+ * print_alphabet - utilize _putchar function to print alphabet
  *
  * Return: Always (0)
  */
