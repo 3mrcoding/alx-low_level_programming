@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- *
+ * print_alphabet - alphabit printer
  *
  * Return: Always (0)
  */
