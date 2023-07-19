@@ -16,5 +16,6 @@ int main(void)
 	{
 		_putchar(arr[i]);
 	}
+	putchar('\n');
 	return (0);
 }
