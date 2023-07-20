@@ -2,7 +2,7 @@
 
 /**
  * _islower - function return 1 if the entered char is lowercase
- *
+ *@c: char to int
  * Return: Always (0)
  */
 
