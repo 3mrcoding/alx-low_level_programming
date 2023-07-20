@@ -5,7 +5,7 @@
  *
  * @n: intger number
  *
- * Returns: (0), (1), (-1)
+ * Return: (0), (1), (-1)
  */
 
 int print_sign(int n)
