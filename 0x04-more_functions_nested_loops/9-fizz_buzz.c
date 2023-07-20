@@ -9,27 +9,20 @@
 int main(void)
 {
 	int x;
-	char *BF;
-	char *B;
-	char *F;
-
-	BF = "FizzBuzz";
-	F = "Fizz";
-	B = "Buzz";
 
 	for (x = 1; x <= 100; x++)
 	{
 		if (x % 3 == 0 && x % 5 == 0)
 		{
-			printf("%s ", BF);
+			printf("FizzBuzz ");
 		}
 		else if (x % 3 == 0)
 		{
-			printf("%s ", F);
+			printf("Fizz ");
 		}
 		else if (x % 5 == 0)
 		{
-			printf("%s ", B);
+			printf("Buzz ");
 		}
 		else
 		{
