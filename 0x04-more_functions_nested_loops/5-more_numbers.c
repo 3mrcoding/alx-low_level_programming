@@ -24,6 +24,5 @@ void more_numbers(void)
 			_putchar('0' + b / 10);
 			_putchar('0' + b % 10);
 		}
-		_putchar('\n');
 	}
 }
