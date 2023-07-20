@@ -1,15 +1,20 @@
 #include "main.h"
 
 /**
- *_islower - print 1 if number is capital
+ * _islower - function return 1 if the entered char is lowercase
  *
- *@c: constatn
- *Return: always ssss
+ * Return: Always (0)
  */
 
 int _islower(int c)
 {
 	if (c >= 97 && c <= 122)
-		return (1);
+	{
+		_putchar('1');
+	}
+	else
+	{
+		_putchar('0');
+	}
 	return (0);
-i}
+}
