@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - function prints string
+ * puts_half - function prints string
  *
  * @str: string location in memory
  *
