@@ -14,6 +14,10 @@ void print_array(int *a, int n)
 	int i;
 	int x;
 
+	if (n <= 0)
+	{
+		n == 1;
+	}
 	for (i = 0; a[i] != '\0'; i++)
 	{
 	}
