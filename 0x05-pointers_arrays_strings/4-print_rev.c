@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _puts - function prints string
+ * print_rev - function prints string
  *
- * @str: string location in memory
+ * @s: string location in memory
  *
  */
 
@@ -17,7 +17,7 @@ void print_rev(char *s)
 	}
 	for (x = 0; x <= i; x++)
 	{
-		_putchar(s[i-x]);
+		_putchar(s[i - x]);
 	}
 	_putchar('\n');
 }
