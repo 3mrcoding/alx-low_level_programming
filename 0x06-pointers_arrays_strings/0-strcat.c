@@ -1,9 +1,11 @@
 
 /**
+ * _strcat - function that concatenates two strings
  *
+ * @dest: first string
+ * @src: second string
  *
- *
- *
+ * Return: new string
  */
 
 char *_strcat(char *dest, char *src)
