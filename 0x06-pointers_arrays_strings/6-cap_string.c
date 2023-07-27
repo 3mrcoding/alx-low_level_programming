@@ -1,36 +1,31 @@
-
 /**
- *
- *
- *
- *
+ * cap_string - a function that capitalizes all words of a string
+ * @n: input string
+ * Return: caps on first letter of a separator
  */
-
 char *cap_string(char *n)
 {
-	int i;
-	int x;
+	int i, x;
+	int cap = 32;
+	int separators[] = {',', ';', '.', '?', '"',
+			    '(', ')', '{', '}', ' ', '\n', '\t'};
 
 	for (i = 0; n[i] != '\0'; i++)
 	{
-	}
-
-	for (x = 0 ; x < i; x++)
-	{
-		int y;
-		int z;
-
-		y = n[x];
-		z = n[x - 1];
-
-		if (y <= 122 && y >= 97)
+		if (n[i] >= 'a' && n[i] <= 'z')
 		{
-			if ( z < 65 || z > 122 || z == 92)
+			n[i] = n[i] - cap;
+		}
+
+		cap = 0;
+
+		for (x = 0; x <= 12; x++)
+		{
+			if (n[i] == separators[x])
 			{
-				y = y;
+				x = 12;
+				cap = 32;
 			}
-			y = y - 32;
-			n[x] = y;
 		}
 	}
 	return (n);
