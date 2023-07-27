@@ -1,7 +1,10 @@
 
 /**
- * string_toupper - function that changes all lowercase letters of a string to uppercase.
+ * string_toupper - function that changes all to uppercase.
  *
+ * @n: string
+ *
+ * Return: capitalized string
  */
 
 char *string_toupper(char *n)
@@ -15,6 +18,7 @@ char *string_toupper(char *n)
 	for (x = 0; x < i; x++)
 	{
 		int y;
+
 		y = n[x];
 
 		if (y <= 122 && y >= 97)
@@ -23,5 +27,5 @@ char *string_toupper(char *n)
 			n[x] = y;
 		}
 	}
-	return(n);
+	return (n);
 }
