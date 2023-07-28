@@ -1,33 +1,25 @@
 /**
- *
- *
- *
- *
- *
+ * rot13 - encode using rot13
+ * @s: variable
+ * Return: Always 0 (Success)
  */
-
-char *rot13(char *n)
+char *rot13(char *s)
 {
-	int i;
-	int k;
-	char x[] = {'A', 'a', 'B', 'b', 'C', 'c', 'D', 'd', 'E', 'e', 'F', 'f', 'G', 'g', 'H', 'h', 'I', 'i', 'J', 'j', 'K', 'k', 'L', 'l', 'M', 'm'};
-	char y[] = {'N', 'n', 'O', 'o', 'P', 'p', 'Q', 'q', 'R', 'r', 'S', 's', 'T', 't', 'U', 'u', 'V', 'v', 'W', 'w', 'X', 'x', 'Y', 'y', 'Z', 'z'};
+	int i = 0, i2 = 0;
+	char alpha[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char alpha2[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	for (i = 0; n[i] != '\0'; i++)
+	while (*(s + i) != 0)
 	{
-		for (k = 0; k <= 13; k++)
+		for (i2 = 0; i2 <= 52; i2++)
 		{
-			if (n[i] == x[k])
+			if (*(s + i) == alpha[i2])
 			{
-				n[i] = y[k];
-				k = 13;
-			}
-			else if (n[i] == y[k])
-			{
-				n[i] = x[k];
-				k = 13;
+				*(s + i) = alpha2[i2];
+				break;
 			}
 		}
+				i++;
 	}
-	return (n);
+		return (s);
 }
