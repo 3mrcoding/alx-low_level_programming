@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
+ * print_chessboard - funtcion
  *
- *
- *
+ * @a: array
  *
  */
 
