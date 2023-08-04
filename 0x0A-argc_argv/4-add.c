@@ -12,7 +12,6 @@
 
 int main(int argc, char *argv[])
 {
-	int x;
 	int i;
 	int y = 0;
 
@@ -22,16 +21,14 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		x = atoi(argv[i]);
-
-		if (x == '\0')
+		if (!atoi(argv[i]))
 		{
-			printf("Error\n");
+			printf("%s\n", "Error");
 			return (1);
 		}
 		else
 		{
-			y += x;
+			y += atoi(argv[i]);
 		}
 	}
 	printf("%d\n", y);
