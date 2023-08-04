@@ -17,14 +17,16 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if (!atoi(argv[i]))
+		int x = atoi(argv[i]);
+
+		if (x == '\0')
 		{
 			printf("%s\n", "Error");
 			return (1);
 		}
 		else
 		{
-			y += atoi(argv[i]);
+			y += x;
 		}
 	}
 	printf("%d\n", y);
