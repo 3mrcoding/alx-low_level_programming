@@ -5,7 +5,7 @@
  * str_concat - function that concatenates two strings
  *
  * @s1: string
- * @s2: string 
+ * @s2: string
  *
  * Return: A pointer to the char array
 */
@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; s2[i] != '\0'; i++)
 	{
 	}
-	
+
 	a = malloc((x + i + 1) * sizeof(char));
 	for (x = 0; s1[x] != '\0'; x++)
 	{
