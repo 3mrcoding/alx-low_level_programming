@@ -14,19 +14,18 @@ char *_strdup(char *str)
 	unsigned int x;
 	unsigned int i;
 	char *ar;
-
-	for (x = 0; str[x] != '\0'; x++)
-	{
-	}
-
-	ar = malloc(x * sizeof(char));
-
+	
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 	else
 	{
+		for (x = 0; str[x] != '\0'; x++)
+		{
+		}
+		ar = malloc(x * sizeof(char));
+		
 		for (i = 0; i <= x; i++)
 		{
 			ar[i] = str[i];
