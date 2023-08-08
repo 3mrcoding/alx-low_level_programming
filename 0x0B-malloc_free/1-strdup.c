@@ -27,7 +27,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		for (i = 0; i < x; i++)
+		for (i = 0; i <= x; i++)
 		{
 			ar[i] = str[i];
 		}
