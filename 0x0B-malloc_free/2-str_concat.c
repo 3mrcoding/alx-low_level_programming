@@ -2,9 +2,10 @@
 #include <stdlib.h>
 
 /**
- * _strdup - creats a copy of an array
+ * str_concat - function that concatenates two strings
  *
- * @str: string wanted to be copied
+ * @s1: string
+ * @s2: string 
  *
  * Return: A pointer to the char array
 */
@@ -19,7 +20,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		s1 = "";
 	}
-	else if (s2 == NULL)
+	if (s2 == NULL)
 	{
 		s2 = "";
 	}
