@@ -25,6 +25,10 @@ char *_strdup(char *str)
 		{
 		}
 		ar = malloc((x + 1) * sizeof(char));
+		if (ar == NULL)
+		{
+			return (NULL);
+		}
 
 		for (i = 0; i <= x; i++)
 		{
