@@ -15,7 +15,7 @@ void *malloc_checked(unsigned int b)
 
 	if (i == NULL)
 	{
-		return ("Address already in use");
+		exit (98);
 	}
 
 	return (i);
