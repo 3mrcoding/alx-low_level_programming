@@ -1,25 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-
 /**
  * string_nconcat - function that concatenates two strings
- *
  * @s1: first string
  * @s2: second string
  * @n: no. of bytes to be taken from s2
- *
  * Return: A pointer
 */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int a = strlen(s1);
-	unsigned int b = strlen(s2);
+	unsigned int a;
+	unsigned int b;
 	unsigned int j;
 	unsigned int k;
 	char *i;
 
+	for (a = 0; s1[a] != '\0'; a++)
+	{
+	}
+	for (b = 0; s2[b] != '\0'; b++)
+	{
+	}
 	if (n > b)
 	{
 		n = b;
