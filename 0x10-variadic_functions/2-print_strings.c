@@ -2,49 +2,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 /**
- * print_strings - print strings that add as argument
- *
- * @separator: char used to seperate between numbers
- * @n: number of arguments which will entered
+* print_strings - prints strings
+*@separator: separator
+*@n: number of strings
+*
+*Return: nothing
 */
-
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	unsigned int x;
-	char *i;
-	va_list args;
 
-	va_start(args, n);
-	if (separator != NULL)
-	{
-		for (x = 1; x <= n; x++)
-		{
-			i = va_arg(args, char*);
-			if (i == NULL)
-			{
-				printf("(nil)");
-			}
-			if (x < n)
-			{
-				printf("%s", i);
-				printf("%s", separator);
-			}
-			else
-			{
-				printf("%s", i);
-			}
-		}
-	}
-	else
-	{
-		for (x = 1; x <= n; x++)
-		{
-			i = va_arg(args, char*);
-			printf("%s", i);
-		}
-	}
-	va_end(args);
-	printf("\n");
+va_list li;
+unsigned int i;
+char *str;
+
+va_start(li, n);
+
+for (i = 0; i < n; i++)
+{
+str = va_arg(li, char *);
+if (str == NULL)
+printf("(nil)");
+else
+printf("%s", str);
+
+if (i != (n - 1) && separator != NULL)
+printf("%s", separator);
+
+}
+
+printf("\n");
+va_end(li);
 }
